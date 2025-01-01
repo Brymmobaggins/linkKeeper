@@ -1,0 +1,82 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Link Keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>LinkKeeper</header>
+
+    <main>
+      <!-- main section -->
+      <section id="main-section">
+        <p>
+          <b>Link Keeper</b> is a simple tool to keep track of your links. You
+          can add a link, give it a title, and a description. <br />
+        </p>
+
+        <div id="dropdown">
+          <label for="category-dropdown">Select a category</label>
+          <select id="category-dropdown">
+            <option value="">Choose category</option>
+            <option value="news">News</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="sports">Sports</option>
+            <option value="social Media">Social Media</option>
+            <option value="work">Work</option>
+            <option value="miscellaneous">Miscellaneous</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button type="button" id="view-category-button">View Category</button>
+          <button type="button" id="add-bookmark-button">Add Bookmark</button>
+        </div>
+      </section>
+
+      <!-- form section -->
+      <section id="form-section" class="hidden">
+        <h2 class="category-name"></h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" />
+          </div>
+          <div>
+            <label for="url">URL:</label>
+            <input type="text" id="url" />
+          </div>
+          <div>
+            <button type="button" id="close-form-button">Go back</button>
+            <button type="button" id="add-bookmark-button-form">
+              Add Bookmark
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- bookmark list section -->
+      <section id="bookmark-list-section" class="hidden">
+        <h2 class="category-name"></h2>
+        <div class="category-list"></div>
+
+        <div class="buttons">
+          <button type="button" id="close-list-button">Go back</button>
+          <button type="button" id="delete-button-bookmark">
+            Delete Bookmark
+          </button>
+        </div>
+      </section>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
