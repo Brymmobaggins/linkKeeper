@@ -7,14 +7,32 @@ const addBookMarkButton = document.querySelector("#add-bookmark-button");
 const addBookMarkBottonForm = document.querySelector(
   "#add-bookmark-button-form"
 );
+// function getBookmarks() {
+//   const bookmarks = localStorage.getItem("bookmarks");
 
+//   if (bookmarks) {
+//     try {
+//       return JSON.parse(bookmarks);
+//     } catch (error) {
+//       console.error("Error parsing bookmarks from localStorage:", error);
+//       return [];
+//     }
+//   }
+//   return [];
+// }
+// function addBookMark(name, category, url){
+
+
+
+
+// }
 function displayForm() {
-  const category = categoryValue.value
+  const category = categoryValue.value;
   const formSection = document.querySelector("#form-section");
   formSection.classList.remove("hidden");
 
   const categoryName = document.querySelector(".category-name");
-  categoryName.innerHTML = `${category}`;
+  categoryName.innerText = `${category}`;
 
   const mainSection = document.querySelector("#main-section");
   mainSection.classList.add("hidden");
@@ -45,8 +63,6 @@ function showAlert() {
   if (categoryValue.value == "" || url == "") {
     alert("Please, provide valid name and URL");
   }
-
- 
 }
 addBookMarkBottonForm.addEventListener("click", function () {
   showAlert();
