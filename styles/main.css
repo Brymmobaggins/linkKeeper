@@ -1,0 +1,126 @@
+/** @format */
+/** @format */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f7f7f7;
+  font-family: "Roboto", serif;
+  color: #333;
+}
+header {
+  /* padding: 4rem; */
+}
+.nav {
+  border: 1px solid #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+svg {
+  width: 1.5rem;
+  fill: #181010;
+  cursor: pointer;
+}
+.nav-toggle .menu {
+  margin-top: 0.2rem;
+}
+
+.nav-checkbox {
+  display: none;
+}
+input[type="search"]{
+  padding: 0.3rem;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+/* .nav__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+} */
+
+/* main {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} */
+/* section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: fit-content;
+}
+
+section {
+  margin: 0 auto;
+  margin-top: 2rem;
+  width: 30%;
+  border: 3px solid var(--tertiary-color);
+  padding: 0 1.5rem;
+  padding-bottom: 1rem;
+}
+section > * {
+  margin-top: 2rem;
+}
+label {
+  display: inline-block;
+}
+select {
+  padding: 0.2rem;
+  margin: 0.5rem 0;
+  border: 1px solid var(--tertiary-color);
+  width: 100%;
+  font-size: 16px;
+} */
+/* h2 {
+  text-align: center;
+} */
+/* button {
+  padding: 5px;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  width: 100px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.hidden {
+  display: none;
+} */
+ /* Desktop size */
+@media screen and (min-width: 560px) {
+  body {
+    background-color: yellow;
+  }
+
+  .menu {
+    display: none;
+  }
+  .search-bar{
+    border: 1px solid red; 
+    width: 100%;
+  }
+  input[type="search"]{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    
+
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
